@@ -1,0 +1,19 @@
+@use "/src/styles/abstracts/variables" as v;
+
+.heroHome {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+
+    color: v.$white;
+
+    // Background with overlay
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url("/images/home-hero.jpeg") no-repeat;
+    background-size: cover;
+}

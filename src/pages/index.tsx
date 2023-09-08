@@ -1,4 +1,6 @@
 import PageLayout from "@/components/PageLayout/PageLayout";
+import HeroForm from "@/components/Heros/HeroForm/HeroForm";
+import Button from "@/components/Button/Button";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -8,7 +10,8 @@ const metadata = {
 export default function Home() {
     return (
         <PageLayout {...metadata}>
-            <p>Home</p>
+            <HeroForm />
+            <Button.Primary>hola</Button.Primary>
         </PageLayout>
     );
 }
