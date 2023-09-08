@@ -31,3 +31,57 @@ export const headerUpEls = [
         icon: <IconClock />,
     },
 ];
+
+export const navbarEls = [
+    {
+        label: "Inicio",
+        url: "/",
+        subMenu: null,
+    },
+    {
+        label: "Servicios",
+        url: "/servicios",
+        subMenu: null,
+    },
+    {
+        label: "Nuestra flota",
+        url: "/nuestra-flota",
+        subMenu: [
+            {
+                label: "Auto sedan remis",
+                url: "/nuestra-flota/auto-sedan-remis",
+            },
+            {
+                label: "Alta gama",
+                url: "/nuestra-flota/alta-gama",
+            },
+            {
+                label: "Mini vans",
+                url: "/nuestra-flota/mini-vans",
+            },
+            {
+                label: "Vans y minibus",
+                url: "/nuestra-flota/vans-minibus",
+            },
+            {
+                label: "Blindados",
+                url: "/nuestra-flota/blindados",
+            },
+        ],
+    },
+    {
+        label: "Nosotros",
+        url: "/nosotros",
+        subMenu: null,
+    },
+    {
+        label: "App",
+        url: "/contacto",
+        subMenu: null,
+    },
+    {
+        label: "Contacto",
+        url: "/contacto",
+        subMenu: null,
+    },
+];

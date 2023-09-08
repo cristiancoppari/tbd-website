@@ -1,10 +1,10 @@
-import s from "./HeroForm.module.scss";
-
 const HeroForm = () => {
     return (
-        <section className={s.heroHome}>
-            <h1 className={s.title}>Servicio de Remises Ejecutivos y Tralsados Corporativos.</h1>
-            <p>20 años de trayectoria y experiencia</p>
+        <section className="heroHome">
+            <div className="heroHome__content wrapper">
+                <h1 className="title">Servicio de Remises Ejecutivos y Tralsados Corporativos.</h1>
+                <p>20 años de trayectoria y experiencia</p>
+            </div>
         </section>
     );
 };

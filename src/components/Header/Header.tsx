@@ -7,7 +7,7 @@ import styles from "./Header.module.scss";
 function Header() {
     return (
         <header className={styles.header}>
-            <div className="container">
+            <div className="wrapper">
                 <ul className={styles.headerUp}>
                     {headerUpEls.map((el, i) => (
                         <li key={i} className="menu-label">

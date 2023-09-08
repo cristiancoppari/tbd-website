@@ -6,5 +6,9 @@
 // Global
 @forward "./base/global";
 
+// Components
+@forward "src/components/Navbar/Navbar.scss";
+@forward "src/components/Heros/HeroForm/HeroForm.scss";
+
 // Modifiers
 @forward "./abstracts/modifiers";

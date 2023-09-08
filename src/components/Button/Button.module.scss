@@ -1,5 +1,14 @@
 @use "/src/styles/abstracts/variables" as v;
 
 .primary {
+    padding: 1rem 2.5rem;
+    border-radius: v.$border-radius-md;
+
     background-color: v.$red;
+    color: v.$white;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
 }
