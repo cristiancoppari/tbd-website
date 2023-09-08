@@ -1,19 +1,43 @@
 @use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
 
 .heroHome {
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    height: 100vh;
+    height: 90vh;
 
     color: v.$white;
 
     // Background with overlay
     background:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
         url("/images/home-hero.jpeg") no-repeat;
     background-size: cover;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding-top: f.px2rem(250);
+
+        @include m.screen("lg") {
+            grid-template-columns: repeat(2, 1fr);
+
+            padding-top: f.px2rem(200);
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        row-gap: f.px2rem(20);
+
+        button {
+            margin-top: 1rem;
+        }
+    }
 }

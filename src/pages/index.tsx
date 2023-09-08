@@ -1,6 +1,5 @@
 import PageLayout from "@/components/PageLayout/PageLayout";
 import HeroForm from "@/components/Heros/HeroForm/HeroForm";
-import Button from "@/components/Button/Button";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -10,8 +9,11 @@ const metadata = {
 export default function Home() {
     return (
         <PageLayout {...metadata}>
-            <HeroForm />
-            <Button.Primary>hola</Button.Primary>
+            <HeroForm>
+                <HeroForm.Title>Servicio de Remises Ejecutivos y Tralsados Corporativos.</HeroForm.Title>
+                <HeroForm.Description>20 años de trayectoria y experiencia</HeroForm.Description>
+                <HeroForm.Cta>Conocer los servicios</HeroForm.Cta>
+            </HeroForm>
         </PageLayout>
     );
 }

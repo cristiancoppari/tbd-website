@@ -1,3 +1,7 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
 // Choose where because it has 0 specificity
 // So it can be easily overridden
 :where(h1, h2, h3, h4, h5, h6) {
@@ -7,4 +11,20 @@
 .menu-label {
     font-size: 0.875rem;
     font-weight: 600;
+}
+
+.h1 {
+    @include m.font-size(28, 600, 32, 1);
+
+    @include m.screen("md") {
+        @include m.font-size(40, 600, 48, 1);
+    }
+
+    @include m.screen("lg") {
+        @include m.font-size(52, 600, 60, 1);
+    }
+}
+
+.p-big {
+    @include m.font-size(18, 300, 20, 1.1);
 }
