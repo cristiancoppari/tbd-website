@@ -1,0 +1,62 @@
+/**
+ * Container
+ * A component fox fixing an elements witdth to the current breakpoint
+ * Based on Tailwind CSS breakpoints
+ * https://tailwindcss.com/docs/container
+ */
+
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "../abstracts/functions" as f;
+
+.container {
+    @include m.screen("sm") {
+        max-width: v.$sm;
+    }
+
+    @include m.screen("md") {
+        max-width: v.$md;
+    }
+
+    @include m.screen("lg") {
+        max-width: v.$lg;
+    }
+
+    @include m.screen("xl") {
+        max-width: v.$xl;
+    }
+
+    @include m.screen("xxl") {
+        max-width: v.$xxl;
+    }
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+/**
+ * Wrapper
+ * Its like a Bootstrap container but with padding and centered
+ */
+.wrapper {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    max-width: v.$max_width_wrapper;
+    padding-right: f.px2rem(24);
+    padding-left: f.px2rem(24);
+    margin-right: auto;
+    margin-left: auto;
+
+    @include m.screen("md") {
+        padding-right: f.px2rem(32);
+        padding-left: f.px2rem(32);
+    }
+
+    @include m.screen("lg") {
+        padding-right: f.px2rem(80);
+        padding-left: f.px2rem(80);
+    }
+}

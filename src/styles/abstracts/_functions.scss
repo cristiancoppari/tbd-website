@@ -1,0 +1,27 @@
+// --------------------------------------------------
+// Functions
+// --------------------------------------------------
+
+@use "sass:math";
+
+/*
+ * px2rem
+ * Converts px to rem
+ * @param {Number} $px - The pixel value to convert
+ * @return {Number} The pixel value converted to rem
+*/
+
+@function px2rem($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+/*
+ * px2em
+ * Converts px to em
+ * @param {Number} $px - The pixel value to convert
+ * @return {Number} The pixel value converted to em
+*/
+
+@function px2em($px) {
+    @return math.div($px, 16) * 1em;
+}
