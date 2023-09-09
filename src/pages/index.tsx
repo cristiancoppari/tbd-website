@@ -1,5 +1,6 @@
 import PageLayout from "@/components/PageLayout/PageLayout";
 import HeroForm from "@/components/Heros/HeroForm/HeroForm";
+import ThreeCards from "@/components/Blocks/ThreeCards/ThreeCards";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -14,6 +15,8 @@ export default function Home() {
                 <HeroForm.Description>20 años de trayectoria y experiencia</HeroForm.Description>
                 <HeroForm.Cta>Conocer los servicios</HeroForm.Cta>
             </HeroForm>
+
+            <ThreeCards />
         </PageLayout>
     );
 }

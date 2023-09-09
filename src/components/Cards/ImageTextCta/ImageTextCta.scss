@@ -1,0 +1,38 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.imageTextCta {
+    padding: 0.5rem;
+
+    border: 1px solid v.$grey-1;
+    border-radius: v.$border-radius-md;
+    background-color: v.$white;
+
+    @include m.shadow;
+
+    img {
+        border-radius: v.$border-radius-sm;
+        width: 100%;
+
+        aspect-ratio: 3/2;
+    }
+
+    &__content {
+        padding: 2rem;
+
+        height: 14rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            margin-bottom: 1rem;
+        }
+
+        .p {
+            color: v.$gray;
+        }
+    }
+}

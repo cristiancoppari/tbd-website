@@ -60,3 +60,7 @@
         padding-left: f.px2rem(80);
     }
 }
+
+.three-columns {
+    @include m.columns(3);
+}

@@ -1,8 +1,8 @@
-import { IconCellphone } from "@/components/icons";
-import { IconEmail } from "@/components/icons";
-import { IconLinkedin } from "@/components/icons";
-import { IconPhone } from "@/components/icons";
-import { IconClock } from "@/components/icons";
+import { IconCellphone } from "@/components/Icons";
+import { IconEmail } from "@/components/Icons";
+import { IconLinkedin } from "@/components/Icons";
+import { IconPhone } from "@/components/Icons";
+import { IconClock } from "@/components/Icons";
 
 export const headerUpEls = [
     {
@@ -83,5 +83,26 @@ export const navbarEls = [
         label: "Contacto",
         url: "/contacto",
         subMenu: null,
+    },
+];
+
+export const heroCards = [
+    {
+        title: "Traslados Corporativos",
+        text: "Servicio empresarial. Remises ejecutivos para empresas.",
+        image: "/images/best-drivers-traslados-corporativos.jpeg",
+        imagePosition: null,
+    },
+    {
+        title: "Traslados para grupos",
+        text: "Traslados en VANs y MiniVans.",
+        image: "/images/best-drivers-traslados-grupales.jpeg",
+        imagePosition: null,
+    },
+    {
+        title: "Traslados para eventos",
+        text: "Cumbres, congresos, casamientos, diplomáticos.",
+        image: "/images/best-drivers-eventos.jpeg",
+        imagePosition: null,
     },
 ];

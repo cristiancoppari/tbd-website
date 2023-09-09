@@ -16,7 +16,10 @@ interface Inputs {
 }
 
 function TransferForm() {
-    const { register, handleSubmit } = useForm<Inputs>();
+    const { register, handleSubmit } = useForm<Inputs>({
+        resolver: zodResolver(schema),
+    });
+
     const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
     const submitHandler = void handleSubmit(onSubmit);

@@ -154,3 +154,15 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin columns($columns: 1, $gap: 1rem) {
+    display: grid;
+
+    grid-template-columns: repeat($columns, 1fr);
+
+    gap: $gap;
+}
+
+@mixin shadow {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}

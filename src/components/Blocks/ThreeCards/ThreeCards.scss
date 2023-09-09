@@ -2,11 +2,6 @@
 @use "/src/styles/abstracts/mixins" as m;
 @use "/src/styles/abstracts/functions" as f;
 
-body {
-    background-color: v.$grey-1;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+.threeCards {
+    margin-top: -6rem;
 }
