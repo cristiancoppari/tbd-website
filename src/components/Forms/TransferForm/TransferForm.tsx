@@ -1,30 +1,52 @@
 import { useForm, type SubmitHandler } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 
-type Inputs = {
-    example: string;
-    exampleRequired: string;
-};
+import Button from "@/components/Button/Button";
+
+const schema = z.object({
+    name: z.string().nonempty(),
+    phone: z.string().nonempty(),
+    email: z.string().email(),
+    message: z.string().nonempty(),
+});
+
+interface Inputs {
+    [key: string]: string;
+}
 
 function TransferForm() {
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-    } = useForm<Inputs>();
+    const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
-    console.log(watch("example")); // watch input value by passing the name of it
+    const submitHandler = void handleSubmit(onSubmit);
 
     return (
-        <form onSubmit={void handleSubmit(onSubmit)}>
-            <input defaultValue="test" {...register("example")} />
+        <form onSubmit={submitHandler} className="form">
+            <h3 className="h3">¿Necesitás un traslado?</h3>
 
-            <input {...register("exampleRequired", { required: true })} />
+            <div className="input-group">
+                <input placeholder="Nombre y apellido" {...register("name")} />
+            </div>
 
-            {errors.exampleRequired && <span>This field is required</span>}
+            <div className="input-group">
+                <input placeholder="Teléfono" {...register("phone")} />
+            </div>
 
-            <input type="submit" />
+            <div className="input-group">
+                <input placeholder="Email" {...register("email")} />
+            </div>
+
+            <div className="input-group">
+                <textarea
+                    placeholder="¿Que traslado necesitás?"
+                    {...register("message")}
+                    cols={10}
+                    rows={10}
+                ></textarea>
+            </div>
+
+            <Button.Primary type="submit">Enviar</Button.Primary>
         </form>
     );
 }

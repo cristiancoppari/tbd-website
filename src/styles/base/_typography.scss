@@ -25,6 +25,30 @@
     }
 }
 
+.h2 {
+    @include m.font-size(24, 600, 28, 1);
+
+    @include m.screen("md") {
+        @include m.font-size(32, 600, 36, 1);
+    }
+
+    @include m.screen("lg") {
+        @include m.font-size(40, 600, 44, 1);
+    }
+}
+
+.h3 {
+    @include m.font-size(24, 600, 28, 1);
+
+    @include m.screen("md") {
+        @include m.font-size(28, 600, 32, 1);
+    }
+
+    @include m.screen("lg") {
+        @include m.font-size(32, 600, 36, 1);
+    }
+}
+
 .p-big {
     @include m.font-size(18, 300, 20, 1.1);
 }

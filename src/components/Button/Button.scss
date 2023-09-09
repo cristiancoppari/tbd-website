@@ -1,0 +1,23 @@
+@use "/src/styles/abstracts/variables" as v;
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: v.$border-radius-md;
+    border: 2px solid transparent;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+
+    &-primary {
+        background-color: v.$red;
+        color: v.$white;
+    }
+
+    &-outline {
+        background-color: v.$white;
+        color: v.$red;
+        border: 2px solid v.$red;
+    }
+}

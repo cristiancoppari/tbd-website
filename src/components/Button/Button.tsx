@@ -1,10 +1,6 @@
-import { type ReactNode } from "react";
-
-import styles from "./Button.module.scss";
-
-type ButtonProps = {
-    children?: ReactNode;
-};
+interface ButtonProps extends ChildrenProps {
+    type?: "button" | "submit" | "reset";
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Button(props: ButtonProps) {
@@ -13,16 +9,24 @@ function Button(props: ButtonProps) {
     return null;
 }
 
-function PrimaryButton(props: ButtonProps) {
-    return <button className={styles.primary}>{props.children}</button>;
+function PrimaryButton({ children, type = "button" }: ButtonProps) {
+    return (
+        <button type={type} className="btn btn-primary">
+            {children}
+        </button>
+    );
 }
 
-function SecondaryButton(props: ButtonProps) {
-    return <button className="secondary">{props.children}</button>;
+function OutlineButton({ children, type = "button" }: ButtonProps) {
+    return (
+        <button type={type} className="btn btn-outline">
+            {children}
+        </button>
+    );
 }
 
 // Attach the sub-components to Button
 Button.Primary = PrimaryButton;
-Button.Secondary = SecondaryButton;
+Button.Outline = OutlineButton;
 
 export default Button;

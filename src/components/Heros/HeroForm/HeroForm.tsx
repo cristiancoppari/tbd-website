@@ -1,12 +1,8 @@
 import TransferForm from "@/components/Forms/TransferForm/TransferForm";
 import Button from "@/components/Button/Button";
 
-interface ChildrenProps {
-    children: React.ReactNode;
-}
-
 interface HeroFormProps extends ChildrenProps {
-    form: boolean;
+    form?: boolean;
 }
 
 function HeroForm({ children, form = true }: HeroFormProps) {
