@@ -3,5 +3,15 @@
 @use "/src/styles/abstracts/functions" as f;
 
 .threeCards {
-    margin-top: -6rem;
+    margin-top: 2rem;
+
+    display: grid;
+
+    @include m.columns(1);
+
+    @include m.screen("lg") {
+        margin-top: -6rem;
+
+        @include m.columns(3);
+    }
 }

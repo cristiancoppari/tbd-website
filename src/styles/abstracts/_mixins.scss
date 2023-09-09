@@ -156,8 +156,6 @@
 }
 
 @mixin columns($columns: 1, $gap: 1rem) {
-    display: grid;
-
     grid-template-columns: repeat($columns, 1fr);
 
     gap: $gap;

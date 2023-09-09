@@ -3,7 +3,7 @@ import { heroCards } from "@/data/data";
 
 function ThreeCards() {
     return (
-        <section className="threeCards three-columns wrapper">
+        <section className="threeCards wrapper">
             {heroCards.map((card) => {
                 const props = {
                     title: card.title,

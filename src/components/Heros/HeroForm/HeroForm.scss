@@ -5,13 +5,18 @@
 .heroHome {
     position: relative;
 
-    height: 90vh;
+    padding-bottom: 2rem;
 
-    // Background with overlay
     background:
         linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)),
         url("/images/home-hero.jpeg") no-repeat;
     background-size: cover;
+
+    @include m.screen("lg") {
+        padding-bottom: initial;
+
+        height: 90vh;
+    }
 
     .wrapper {
         display: grid;
