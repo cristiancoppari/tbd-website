@@ -61,6 +61,38 @@
     }
 }
 
+.h5 {
+    @include m.font-size(18, 500, 20, 1);
+
+    @include m.screen("md") {
+        @include m.font-size(20, 500, 24, 1);
+    }
+
+    @include m.screen("lg") {
+        @include m.font-size(22, 500, 28, 1);
+    }
+}
+
+.h6 {
+    @include m.font-size(18, 400, 20, 1);
+
+    @include m.screen("md") {
+        @include m.font-size(18, 400, 24, 1);
+    }
+
+    @include m.screen("lg") {
+        @include m.font-size(20, 400, 28, 1);
+    }
+}
+
+.p {
+    @include m.font-size(16, 400, 24);
+}
+
 .p-big {
     @include m.font-size(18, 300, 20, 1.1);
+}
+
+.text-gray {
+    color: v.$gray;
 }

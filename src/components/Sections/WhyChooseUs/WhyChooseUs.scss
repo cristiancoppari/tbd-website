@@ -1,0 +1,53 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.whyChooseUs {
+    .iconsBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+
+        padding: 1rem;
+        margin-top: 4rem;
+
+        border-radius: v.$border-radius-md;
+        background-color: v.$white;
+
+        @include m.shadow;
+
+        @include m.screen("md") {
+            grid-template-columns: 1fr 1fr;
+            padding: 5rem;
+
+            column-gap: 8rem;
+            row-gap: 4rem;
+        }
+    }
+
+    .iconBox {
+        display: grid;
+        grid-template-rows: 3rem auto;
+
+        text-align: left;
+
+        gap: 1rem;
+
+        @include m.screen(md) {
+            grid-template-rows: 3rem 1fr;
+
+            gap: 2rem;
+        }
+
+        &__icon {
+            color: v.$red;
+
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &__title {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

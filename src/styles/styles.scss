@@ -13,6 +13,11 @@
 @forward "src/components/Button/Button.scss";
 @forward "src/components/Cards/ImageTextCta/ImageTextCta.scss";
 @forward "src/components/Blocks/ThreeCards/ThreeCards.scss";
+@forward "src/components/Section/Section.scss";
+
+// Sections
+@forward "src/components/Sections/WhyChooseUs/WhyChooseUs.scss";
+@forward "src/components/Sections/Steps/Steps.scss";
 
 // Modifiers
 @forward "./abstracts/modifiers";

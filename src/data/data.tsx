@@ -1,3 +1,12 @@
+import {
+    ClockIcon,
+    UserIcon,
+    UserGroupIcon,
+    CreditCardIcon,
+    DevicePhoneMobileIcon,
+    TrophyIcon,
+} from "@heroicons/react/24/outline";
+
 import { IconCellphone } from "@/components/Icons";
 import { IconEmail } from "@/components/Icons";
 import { IconLinkedin } from "@/components/Icons";
@@ -104,5 +113,74 @@ export const heroCards = [
         text: "Cumbres, congresos, casamientos, diplomáticos.",
         image: "/images/best-drivers-eventos.jpeg",
         imagePosition: null,
+    },
+];
+
+export const whyChooseUsCards = [
+    {
+        title: "Atención Personalizada",
+        text: "Todos los días de 07:00 a 23:00 hs.",
+        cta: null,
+        icon: <ClockIcon />,
+    },
+    {
+        title: "Atención al cliente",
+        text: "Con Personal Capacitado en Logística Integral",
+        cta: null,
+        icon: <UserIcon />,
+    },
+    {
+        title: "Conductores entrenados",
+        text: "Todos los Conductores poseen entrenamiento en Manejo Seguro y Predictivo con certificado vigente.",
+        cta: null,
+        icon: <UserGroupIcon />,
+    },
+    {
+        title: "Múltiples Medios de Pago",
+        text: "Contamos con Cuentas Corriente, Tarjetas de Crédito y otros.",
+        cta: null,
+        icon: <CreditCardIcon />,
+    },
+    {
+        title: "App para smartphones",
+        text: "Contamos con una App Mobile propia para que puedas realizar los pedidos desde ahi.",
+        cta: null,
+        icon: <DevicePhoneMobileIcon />,
+    },
+    {
+        title: "Certificaciones",
+        text: "Pionera en certificarse bajo las Normas de Calidad ISO 9001:2015.",
+        cta: {
+            label: "Descargar Certificado",
+            url: "/",
+        },
+        icon: <TrophyIcon />,
+    },
+];
+
+export const steps = [
+    {
+        number: 1,
+        title: "Completá nuestro formulario",
+        text: "Completá con tus datos y el servicio que estás necesitando.",
+        cta: {
+            label: "Ver formulario",
+        },
+    },
+    {
+        number: 2,
+        title: "Reservamos tu servicio",
+        text: "Procesamos la información y te contactamos para confirmar el servicio.",
+        cta: {
+            label: "Reservá ahora",
+        },
+    },
+    {
+        number: 3,
+        title: "Disfrutá del viaje",
+        text: "Nuestro conductor te estará esperando en el lugar y horario acordado.",
+        cta: {
+            label: "¡Empecemos!",
+        },
     },
 ];

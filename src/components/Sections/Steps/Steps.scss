@@ -1,0 +1,40 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.steps {
+    .stepsBox {
+        display: grid;
+
+        margin-top: 4rem;
+
+        @include m.screen(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .step {
+        &__number {
+            aspect-ratio: 1/1;
+            width: 1.5rem;
+
+            margin: 0 auto;
+            margin-bottom: 1rem;
+
+            @include m.flex-center;
+            font-weight: 500;
+
+            background-color: v.$red;
+            color: v.$white;
+            border-radius: 50%;
+        }
+
+        &__title {
+            margin-bottom: 0.5rem;
+        }
+
+        &__text {
+            margin-bottom: 1rem;
+        }
+    }
+}

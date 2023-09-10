@@ -1,0 +1,37 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.section {
+    padding-top: v.$section-padding-sm;
+
+    text-align: center;
+
+    @include m.screen(md) {
+        padding-top: v.$section-padding-md;
+    }
+
+    @include m.screen(lg) {
+        padding-top: v.$section-padding-lg;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+
+        @include m.screen(md) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__p {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include m.screen(md) {
+            margin-bottom: 0.8rem;
+        }
+    }
+}
