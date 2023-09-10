@@ -1,0 +1,25 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.mobileApp {
+    display: grid;
+
+    @include m.screen(md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section__content {
+        text-align: start;
+
+        align-self: center;
+    }
+
+    .section__children {
+        margin-top: 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}

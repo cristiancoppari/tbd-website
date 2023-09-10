@@ -11,6 +11,10 @@
             height: auto;
         }
 
+        h2 {
+            @include m.h5;
+        }
+
         button {
             margin-top: 2rem;
         }
