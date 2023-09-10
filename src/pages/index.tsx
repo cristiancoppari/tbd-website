@@ -3,6 +3,7 @@ import HeroForm from "@/components/Heros/HeroForm/HeroForm";
 import ThreeCards from "@/components/Blocks/ThreeCards/ThreeCards";
 import WhyChooseUs from "@/components/Sections/WhyChooseUs/WhyChooseUs";
 import Steps from "@/components/Sections/Steps/Steps";
+import ServicesCarousel from "@/components/Sections/ServicesCarousel/ServicesCarousel";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -21,6 +22,7 @@ export default function Home() {
             <ThreeCards />
             <WhyChooseUs />
             <Steps />
+            <ServicesCarousel />
         </PageLayout>
     );
 }

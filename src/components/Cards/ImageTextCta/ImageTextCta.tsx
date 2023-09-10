@@ -6,12 +6,20 @@ interface ImageTextCtaProps {
     title: string;
     text: string;
     image: string;
+    className?: string;
     imagePosition?: "left" | "right" | "top" | "bottom";
 }
 
-function ImageTextCta({ children, title, text, image, imagePosition = "right" }: ImageTextCtaProps & ChildrenProps) {
+function ImageTextCta({
+    children,
+    className,
+    title,
+    text,
+    image,
+    imagePosition = "right",
+}: ImageTextCtaProps & ChildrenProps) {
     return (
-        <article className={clsx(`imageTextCta`, imagePosition ?? "")}>
+        <article className={clsx(`imageTextCta`, imagePosition ?? "", className ?? "")}>
             <img src={image} alt={title} />
 
             <div className="imageTextCta__content">

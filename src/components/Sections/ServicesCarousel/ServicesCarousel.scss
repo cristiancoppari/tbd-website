@@ -1,0 +1,18 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.servicesCarousel {
+    margin-top: 4rem;
+    padding: 4rem;
+
+    &__card {
+        .imageTextCta__content {
+            height: auto;
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+    }
+}

@@ -184,3 +184,26 @@ export const steps = [
         },
     },
 ];
+
+export const carouselServices = [
+    {
+        image: "/images/best-drivers-traslados-corporativos.jpeg",
+        title: "Traslados Ejecutivos",
+        text: "Servicio con perfil corporativo. Ideal para el traslado del personal de su empresa. Autos con el máximo confort y elemtnos de seguridad activa y pasiva.",
+    },
+    {
+        image: "/images/best-drivers-traslados-grupales.jpeg",
+        title: "Traslados Grupales",
+        text: "Ideal para empresas que desean trasladar a su personal, colaboradores y directos a cumbres, congresos o eventos puntuales en forma grupal.",
+    },
+    {
+        image: "/images/best-drivers-eventos.jpeg",
+        title: "Traslados para Eventos",
+        text: "Ofrecemos una flota de vehículos para darte una solución integral de logística para toda tu jornada corporativa o evento.",
+    },
+    {
+        image: "/images/best-drivers-blindados.png",
+        title: "Blindados",
+        text: "Ofrecemos una flota de vehículos blindados para traslados de directivos, diplomáticos, personalidades y figuras públicas, con el máximo nivel de seguridad.",
+    },
+];
