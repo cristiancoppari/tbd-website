@@ -230,3 +230,48 @@ export const q_and_a = [
         answer: "Se realizan mensajerias pequeñas. No trasladamos valores.",
     },
 ];
+
+export const testimonials = [
+    {
+        company: "Minas Pirquitas LLC",
+        position: "Dirección General",
+        message:
+            "La atención telefónica es impecable, también los tiempos de respuesta a pedido por correo electrónico y los datos brindados respecto a asignación de chofer. El pasajero que utiliza los servicios queda muy conforme.",
+    },
+    {
+        company: "Viajes Verger",
+        position: "Gerente General",
+        message:
+            "Best Drivers tiene la mejor atención y es sumamente recomendable. Lo utilizamos muchísimo para traslados médicos ya que el laboratorio es muy exigente y por suerte siempre tenemos buenas devoluciones gracias a ustedes.",
+    },
+    {
+        company: "Ricoh",
+        position: "Dirección General",
+        message:
+            "Gracias a TODO el TEAM de Best Drivers, siempre es una TRANQUILIDAD TRABAJAR CON UDS! (Cosa que en estos días que corren no es común, poder confiar en la calidad y excelencia de un servicio). GRACIAS!",
+    },
+    {
+        company: "BBVA",
+        position: "Servicios Generales",
+        message:
+            "Hace años solicito traslados con Best Drivers. Los operadores son muy amables. Si el caso lo requiere, siempre acompañando a buscar soluciones. Siempre recibo los mails de confirmación y avisos al celular.",
+    },
+    {
+        company: "Torres Meeting & Incentives",
+        position: "Dirección General",
+        message:
+            "Realmente estamos muy satisfechas con la excelencia del servicio de The Best Drivers. Lo más destacado es que su excelencia esta presente en cada una de las áreas involucradas haciendo aún mejor el resultado final.",
+    },
+    {
+        company: "Allianz Seguros",
+        position: "Dirección General",
+        message:
+            "Buenas tardes, muchas gracias por el mail. Es un placer comentarles que todas las personas que han viajado me han dado las mejores referencias de sus viajes. Muchas gracias por la paciencia, ayer los llame cientos de veces. Muy amables todas las personas que me han atendido por teléfono.",
+    },
+    {
+        company: "Inventiv Health Clinical SA - Syneos Health",
+        position: "Administración",
+        message:
+            "Excelente atención en el Call Center, reservas, cumplimiento de las mismas. Área administrativa muy buena predisposición, respuestas inmediatas y gran colaboración.",
+    },
+];

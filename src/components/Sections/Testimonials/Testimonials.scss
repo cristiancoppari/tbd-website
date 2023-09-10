@@ -1,0 +1,40 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.testimonials {
+    &__carousel {
+        margin-top: 3rem;
+
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    &__card {
+        display: grid;
+        grid-template-rows: repeat(3, auto) 1fr;
+        align-content: start;
+        background: v.$white;
+        padding: 2rem;
+        border-radius: v.$border-radius-md;
+        height: 100%;
+
+        &__title {
+            margin-bottom: 0.5rem;
+        }
+
+        &__p,
+        &__message {
+            margin-bottom: 1rem;
+        }
+
+        &__rating {
+            color: v.$red;
+            align-self: self-end;
+
+            display: grid;
+            grid-template-columns: repeat(5, 2rem);
+        }
+    }
+}

@@ -6,6 +6,7 @@ import Steps from "@/components/Sections/Steps/Steps";
 import ServicesCarousel from "@/components/Sections/ServicesCarousel/ServicesCarousel";
 import MobileApp from "@/components/Sections/MobileApp/MobileApp";
 import FAQs from "@/components/Sections/FAQs/FAQs";
+import Testimonials from "@/components/Sections/Testimonials/Testimonials";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -32,6 +33,8 @@ export default function Home() {
             <MobileApp />
 
             <FAQs />
+
+            <Testimonials />
         </PageLayout>
     );
 }
