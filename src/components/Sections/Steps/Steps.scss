@@ -8,6 +8,8 @@
 
         margin-top: 4rem;
 
+        gap: 4rem;
+
         @include m.screen(md) {
             grid-template-columns: repeat(3, 1fr);
         }
