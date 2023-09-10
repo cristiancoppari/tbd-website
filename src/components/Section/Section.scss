@@ -4,15 +4,18 @@
 
 .section {
     padding-top: v.$section-padding-sm;
+    padding-bottom: v.$section-padding-sm;
 
     text-align: center;
 
     @include m.screen(md) {
         padding-top: v.$section-padding-md;
+        padding-bottom: v.$section-padding-md;
     }
 
     @include m.screen(lg) {
         padding-top: v.$section-padding-lg;
+        padding-bottom: v.$section-padding-lg;
     }
 
     &__title {

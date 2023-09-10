@@ -14,6 +14,7 @@ function MobileApp() {
             description={[
                 "Contamos con una App exclusiva para todos nuestros clientes, para que puedas auto-gestionar tus propios servicios y ver el viaje en tiempo real. Disponible para iPhone y Android.",
             ]}
+            style={{ paddingBottom: "0" }}
         >
             <img src={appImage.src} alt="Best Drivers - App" />
         </Section>

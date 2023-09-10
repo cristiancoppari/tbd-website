@@ -207,3 +207,26 @@ export const carouselServices = [
         text: "Ofrecemos una flota de vehículos blindados para traslados de directivos, diplomáticos, personalidades y figuras públicas, con el máximo nivel de seguridad.",
     },
 ];
+
+export const q_and_a = [
+    {
+        question: "¿Cuál es el área de cobertura?",
+        answer: "Cubrimos toda el área de CABA y GBA, por otros destinos consultanos.",
+    },
+    {
+        question: "¿Qué medios de pago aceptan?",
+        answer: "Aceptamos Cuenta Corriente corporativa o Tarjetas de Crédito.",
+    },
+    {
+        question: "¿Ofrecen servicios de Combis o Minivans?",
+        answer: "Sí, desde 4 a 23 pasajeros, previo presupuesto y reserva formalizada.",
+    },
+    {
+        question: "¿Se pueden hacer reservas telefónicamente?",
+        answer: "Por supuesto. Podés realizar tus reservas Telefónicamente al 0800-345-2300, mediante E-mail y a través de nuestra App.",
+    },
+    {
+        question: "¿Cuentan con servicios de fletes?",
+        answer: "Se realizan mensajerias pequeñas. No trasladamos valores.",
+    },
+];

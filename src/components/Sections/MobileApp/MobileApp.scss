@@ -3,10 +3,12 @@
 @use "/src/styles/abstracts/functions" as f;
 
 .mobileApp {
-    display: grid;
+    .wrapper {
+        display: grid;
 
-    @include m.screen(md) {
-        grid-template-columns: 1fr 1fr;
+        @include m.screen(md) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .section__content {
@@ -17,6 +19,8 @@
 
     .section__children {
         margin-top: 1rem;
+
+        display: flex;
 
         img {
             width: 100%;
