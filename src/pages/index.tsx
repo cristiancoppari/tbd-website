@@ -7,6 +7,7 @@ import ServicesCarousel from "@/components/Sections/ServicesCarousel/ServicesCar
 import MobileApp from "@/components/Sections/MobileApp/MobileApp";
 import FAQs from "@/components/Sections/FAQs/FAQs";
 import Testimonials from "@/components/Sections/Testimonials/Testimonials";
+import Clients from "@/components/Sections/Clients/Clients";
 
 const metadata = {
     title: "Best Drivers - Remises y Traslados Ejecutivos",
@@ -21,20 +22,14 @@ export default function Home() {
                 <HeroForm.Description>20 años de trayectoria y experiencia</HeroForm.Description>
                 <HeroForm.Cta>Conocer los servicios</HeroForm.Cta>
             </HeroForm>
-
             <ThreeCards />
-
             <WhyChooseUs />
-
             <Steps />
-
             <ServicesCarousel />
-
             <MobileApp />
-
             <FAQs />
-
             <Testimonials />
+            <Clients />
         </PageLayout>
     );
 }

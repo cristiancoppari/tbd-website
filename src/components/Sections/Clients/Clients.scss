@@ -1,0 +1,28 @@
+@use "/src/styles/abstracts/variables" as v;
+@use "/src/styles/abstracts/mixins" as m;
+@use "/src/styles/abstracts/functions" as f;
+
+.clients {
+    &__logos {
+        padding: 2rem;
+
+        background-color: v.$white;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        margin-top: 3rem;
+
+        border-radius: v.$border-radius-md;
+        @include m.shadow;
+
+        @include m.screen(md) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include m.screen(lg) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}

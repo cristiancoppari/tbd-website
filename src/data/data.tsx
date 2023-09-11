@@ -275,3 +275,186 @@ export const testimonials = [
             "Excelente atención en el Call Center, reservas, cumplimiento de las mismas. Área administrativa muy buena predisposición, respuestas inmediatas y gran colaboración.",
     },
 ];
+
+export const clients = [
+    {
+        name: "Allianz",
+        image: "/images/logos/allianz-logo.png",
+    },
+    {
+        name: "Andreani",
+        image: "/images/logos/andreani-logo.png",
+    },
+    {
+        name: "Arauco",
+        image: "/images/logos/arauco-logo.png",
+    },
+    {
+        name: "Bayer",
+        image: "/images/logos/bayer-logo.png",
+    },
+    {
+        name: "BBVA",
+        image: "/images/logos/bbva-logo.png",
+    },
+    {
+        name: "Came",
+        image: "/images/logos/came-logo.png",
+    },
+    {
+        name: "Corteva",
+        image: "/images/logos/corteva-logo.png",
+    },
+    {
+        name: "Dell",
+        image: "/images/logos/dell-logo.png",
+    },
+    {
+        name: "Disvol",
+        image: "/images/logos/disvol-logo.png",
+    },
+    {
+        name: "Edenor",
+        image: "/images/logos/edenor-logo.png",
+    },
+    {
+        name: "El Trebol",
+        image: "/images/logos/el-trebol-logo.png",
+    },
+    {
+        name: "Equinor",
+        image: "/images/logos/equinor-logo.png",
+    },
+    {
+        name: "Ferrovias",
+        image: "/images/logos/ferrovias-logo.png",
+    },
+    {
+        name: "First Data",
+        image: "/images/logos/first-data-logo.png",
+    },
+    {
+        name: "fiserv",
+        image: "/images/logos/fiserv-logo.png",
+    },
+    {
+        name: "gador",
+        image: "/images/logos/gador-logo.png",
+    },
+    {
+        name: "galderma",
+        image: "/images/logos/galderma-logo.png",
+    },
+    {
+        name: "gilbarco",
+        image: "/images/logos/gilbarco-logo.png",
+    },
+    {
+        name: "halliburton",
+        image: "/images/logos/halliburton-logo.png",
+    },
+    {
+        name: "kimberly-clark",
+        image: "/images/logos/kimberly-clark-logo.png",
+    },
+    {
+        name: "la-gaceta",
+        image: "/images/logos/la-gaceta-logo.png",
+    },
+    {
+        name: "mckinsey-and-company",
+        image: "/images/logos/mckinsey-and-company-logo.png",
+    },
+    {
+        name: "merck",
+        image: "/images/logos/merck-logo.png",
+    },
+    {
+        name: "milkaut",
+        image: "/images/logos/milkaut-logo.png",
+    },
+    {
+        name: "minerar",
+        image: "/images/logos/minerar-logo.png",
+    },
+    {
+        name: "monsanto",
+        image: "/images/logos/monsanto-logo.png",
+    },
+    {
+        name: "nielsen",
+        image: "/images/logos/nielsen-logo.png",
+    },
+    {
+        name: "pampa-energia",
+        image: "/images/logos/pampa-energia-logo.png",
+    },
+    {
+        name: "pepsico",
+        image: "/images/logos/pepsico-logo.png",
+    },
+    {
+        name: "ppd",
+        image: "/images/logos/ppd-logo.png",
+    },
+    {
+        name: "reizen",
+        image: "/images/logos/reizen-logo.png",
+    },
+    {
+        name: "ricoh",
+        image: "/images/logos/ricoh-logo.png",
+    },
+    {
+        name: "rosen",
+        image: "/images/logos/rosen-logo.png",
+    },
+    {
+        name: "sancor-seguros",
+        image: "/images/logos/sancor-seguros-logo.png",
+    },
+    {
+        name: "sullair",
+        image: "/images/logos/sullair-logo.png",
+    },
+    {
+        name: "syngenta",
+        image: "/images/logos/syngenta-logo.png",
+    },
+    {
+        name: "telecom",
+        image: "/images/logos/telecom-logo.png",
+    },
+    {
+        name: "teva",
+        image: "/images/logos/teva-logo.png",
+    },
+    {
+        name: "torres-meetings",
+        image: "/images/logos/torres-meetings-logo.png",
+    },
+    {
+        name: "total",
+        image: "/images/logos/total-logo.png",
+    },
+    {
+        name: "vista-oil",
+        image: "/images/logos/vista-oil-logo.jpg",
+    },
+    {
+        name: "welltec",
+        image: "/images/logos/welltec-logo.png",
+    },
+    {
+        name: "wintershall",
+        image: "/images/logos/wintershall-logo.png",
+    },
+    {
+        name: "yamana-gold",
+        image: "/images/logos/yamana-gold-logo.png",
+    },
+    {
+        name: "ypf",
+        image: "/images/logos/ypf-logo.png",
+    },
+];
